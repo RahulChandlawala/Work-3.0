@@ -1,0 +1,314 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* Font family styling */
+@font-face {
+	font-family: "truetype";
+	src: url(../Fonts/TKReg_0.TTF);
+}
+
+/* Start background stysling */
+html {
+	height: 100%;
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	/* overflow: hidden; */
+	overflow: hidden;
+	/* background-image: url(../images/Home-page/Background-image/BGHS1.jpg); */
+}
+
+body {
+	color: #fff;
+	font-family: "truetype";
+	max-width: 100%;
+	height: 100vh;
+	/* overflow: hidden; */
+}
+
+.large-header {
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+#large-header {
+	background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
+}
+
+.bg-change {
+	background-image: url(../images/Home-page/Background-image/BGHS0.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+}
+
+.normal0 {
+	background-image: url(../images/Home-page/Background-image/BGHS0.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+}
+.normal1 {
+	background-image: url(../images/Home-page/Background-image/BGHS1.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+}
+.normal2 {
+	background-image: url(../images/Home-page/Background-image/BGHS2.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+}
+.normal3 {
+	background-image: url(../images/Home-page/Background-image/BGHS3.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+}
+.normal4 {
+	background-image: url(../images/Home-page/Background-image/BGHS4.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+}
+.normal5 {
+	background-image: url(../images/Home-page/Background-image/BGHS4.jpg) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 100% 100%;
+}
+/* 
+.greet-container {
+	position: absolute;
+	max-width: 100%;
+	left: 50%;
+} */
+
+.greet {
+	/* background-color: rgba(119, 119, 119, 0.652); */
+	position: absolute;
+	font-size: 50px;
+	text-align: center;
+	left: 44%;
+	bottom: 65%;
+	transition: all 0.5s;
+	opacity: 0;
+}
+
+hr {
+	width: 1000px;
+	bottom: 63%;
+	color: whitesmoke;
+	position: absolute;
+	left: 23%;
+	opacity: 0;
+}
+/*taglines*/
+
+.title-text {
+	/* background-color: rgba(119, 119, 119, 0.652); */
+	position: absolute;
+	font-size: 25px;
+	text-align: center;
+	left: 26%;
+	bottom: 51%;
+	transition: all 0.5s;
+	width: 900px;
+	line-height: 1.4;
+	opacity: 0;
+}
+
+/* Footer (text and logo styling) */
+
+.text {
+	position: absolute;
+	font-size: 30px;
+	left: 70px;
+	bottom: 70px;
+	color: #0f94ed;
+	/* align-self: flex-end; */
+	opacity: 0;
+	/* transform: all 0.2s; */
+	/* animation: moveInBottom ease-out 1000ms; */
+}
+
+.logo {
+	width: 190px;
+	height: 140px;
+	position: absolute;
+	bottom: 70px;
+	right: 70px;
+	opacity: 0;
+}
+
+.btn-container {
+	position: absolute;
+	bottom: 20px;
+	width: 344px;
+	right: 10px;
+	/* background-color: red; */
+	height: 40px;
+	/* opacity: 0; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* animation: MoveinBottom 1s ease-in forwards; */
+}
+
+.btn {
+	padding: 20px 20px;
+	border: none;
+	font-size: larger;
+	background-color: #2196f3;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	opacity: 0;
+}
+
+.btn:hover {
+	opacity: 1 !important;
+	transform: scale(1.1);
+}
+
+.slider {
+	transition: 0.2s;
+	opacity: 0;
+	height: 2px;
+}
+
+#myRange:hover {
+	opacity: 1 !important;
+	cursor: pointer;
+}
+
+.btn-plus {
+	background-image: url("../images/Home-page/Symbols/plus.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.btn-minus {
+	background-image: url("../images/Home-page/Symbols/minus.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.unmute {
+	background-image: url("../images/Home-page/Symbols/unmute.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.mute {
+	background-image: url("../images/Home-page/Symbols/mute.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn-next {
+	background-image: url("../images/Home-page/Symbols/next.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.play {
+	background-image: url("../images/Home-page/Symbols/play.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pause {
+	background-image: url("../images/Home-page/Symbols/pause.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.enter {
+	background-image: url("../images/Home-page/Symbols/Enter.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.exit {
+	background-image: url("../images/Home-page/Symbols/Exit.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.normal {
+	background-image: url("../images/Home-page/Symbols/bgChange.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.animated {
+	background-image: url("../images/Home-page/Symbols/bgChange.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.bg-normal {
+	background-image: url("../images/Home-page/Symbols/multibg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@keyframes moveInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(70px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes moveInBottom1 {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 0.2;
+		transform: translate(0);
+	}
+}
+@keyframes moveIngreet {
+	0% {
+		opacity: 0;
+		transform: translateY(65%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes moveInLine {
+	0% {
+		opacity: 0;
+		transform: translateY(63%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes moveInTitle {
+	0% {
+		opacity: 0;
+		transform: translateY(51%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
