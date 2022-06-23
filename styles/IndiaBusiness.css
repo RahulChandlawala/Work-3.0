@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	/* background-color: red; */
 }
 
 @font-face {
@@ -15,19 +16,20 @@ body {
 	max-width: 100%;
 	height: 100vh;
 	overflow: hidden;
-	background-image: url(../images/main-page/Background-image/BGMP.jpg) !important;
+	background-image: url(../images/ThirdPage/Background-image/BGTP.jpg) !important;
 	background-repeat: no-repeat;
-	/* background-size: contain; */
+	background-size: cover;
 	background-size: 100% 100%;
 	position: relative;
 }
+
 .material-menu-wrapper {
 	position: absolute;
 	bottom: 45%;
 	right: 0;
 	height: 484px;
 	width: 288px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
 }
@@ -166,8 +168,8 @@ body {
 	/* height: fit-content; */
 	/* bottom: 26%; */
 	left: 105px;
-	top: 40px;
-	width: 37vh;
+	top: 410px;
+	width: fit-content;
 	background: #0f94ed;
 	border-radius: 15px;
 	opacity: 0;
@@ -178,17 +180,37 @@ body {
 	position: absolute;
 	z-index: 3;
 	top: auto;
-	right: 65px;
-	bottom: 22%;
+	right: 105px;
+	bottom: -47%;
 	opacity: 0;
 	border-radius: 15px;
 	background: #0f94ed;
+	width: 222px;
 }
 .dropdown,
 .dropdown1 {
-	opacity: 1;
+	/* opacity: 0.1; */
 	will-change: opacity;
-	transition: all 0.4s ease-out;
+	animation: rightin 0.5s ease-in forwards !important;
+}
+
+@keyframes rightin {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes rightout {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
 }
 
 nav ul {
@@ -197,7 +219,7 @@ nav ul {
 	text-align: center;
 }
 
-nav li {
+li {
 	will-change: transform, opacity;
 	border-bottom: 1px solid;
 	margin: 25px 0;
@@ -313,7 +335,7 @@ nav a {
 }
 
 .snip1189 {
-	text-align: center;
+	text-align: left;
 	/* text-transform: uppercase; */
 	/* font-weight: 500; */
 	letter-spacing: 1px;
@@ -417,7 +439,6 @@ nav a {
 	transition: transform 0.3s ease;
 }
 
-/* footer componrts */
 .text {
 	position: absolute;
 	font-size: 30px;
@@ -439,9 +460,17 @@ nav a {
 	/* opacity: 0; */
 }
 
+.footer {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-color: #0f94ed;
+}
+
 .btn-container {
 	position: absolute;
-	bottom: 20px;
+	bottom: 5px;
 	width: 256px;
 	right: 60px;
 	/* background-color: red; */
@@ -463,7 +492,7 @@ nav a {
 }
 
 .btn:hover {
-	opacity: 1 !important;
+	opacity: 1;
 }
 
 .slider {
@@ -476,6 +505,7 @@ nav a {
 	opacity: 1;
 	cursor: pointer;
 }
+
 .play {
 	background-image: url("../images/main-page/Symbols/play.png");
 	background-repeat: no-repeat;

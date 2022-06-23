@@ -6,11 +6,11 @@ var main1 = document.querySelector("main1");
 var win1 = window;
 const dropdown = document.querySelector(".material-content1");
 circle1.addEventListener("click", function openMenu(event) {
-	// console.log("circle1");
+	dropdown.style.animation = "rightout 0.5s ease-in forwards";
 	circle1.classList.toggle("active");
 	dropdown.classList.toggle("dropdown");
+
 	ham1.classList.toggle("material-close1");
-	console.log("circle");
 	for (let i = 0; i <= link.length; i++) {
 		link1[i].classList.toggle("active");
 		// link[i].style.visibility = "visible";
@@ -20,7 +20,10 @@ circle1.addEventListener("click", function openMenu(event) {
 
 	if (circle.classList.contains("active")) {
 		circle.classList.remove("active");
+		// dropdown.classList.remove("removedropDown");
+		dropdown.style.animation = "rightout 0.5s ease-in forwards";
 		dropDown.classList.remove("dropdown1");
+		// dropdown.classList.add("removedropDown");
 		for (var i = 0; i < link.length; i++) {
 			link[i].classList.toggle("active");
 		}
@@ -32,7 +35,9 @@ circle1.addEventListener("click", function openMenu(event) {
 win1.addEventListener("click", function closeMenu() {
 	if (circle1.classList.contains("active")) {
 		circle1.classList.remove("active");
+		dropdown.style.animation = "rightout 0.5s ease-in forwards";
 		dropdown.classList.remove("dropdown");
+		// dropdown.classList.add("removedropDown");
 		for (let i = 0; i <= link.length; i++) {
 			link1[i].classList.toggle("active");
 			// link[i].style.visibility = "hidden";
@@ -51,11 +56,13 @@ const dropDown = document.querySelector(".material-content");
 var win = window;
 
 circle.addEventListener("click", function openMenu(event) {
+	dropDown.style.animation = "rightout 0.5s ease-in forwards";
 	// console.log("circle");
 	circle.classList.toggle("active");
 	ham.classList.toggle("material-close");
 
 	dropDown.classList.toggle("dropdown1");
+	dropdown.classList.remove("dropdown");
 
 	// main.classList.toggle("active");
 	console.log("circle");
@@ -67,7 +74,8 @@ circle.addEventListener("click", function openMenu(event) {
 
 	if (circle1.classList.contains("active")) {
 		circle1.classList.remove("active");
-		dropdown.classList.remove("dropdown");
+		dropDown.classList.remove("dropdown");
+		dropDown.style.animation = "rightout 0.5s ease-in forwards";
 		for (let i = 0; i <= link.length; i++) {
 			link1[i].classList.toggle("active");
 			// link[i].style.visibility = "hidden";
@@ -80,6 +88,7 @@ circle.addEventListener("click", function openMenu(event) {
 win.addEventListener("click", function closeMenu() {
 	if (circle.classList.contains("active")) {
 		circle.classList.remove("active");
+		dropDown.style.animation = "rightout 0.5s ease-in forwards";
 		dropDown.classList.remove("dropdown1");
 		for (var i = 0; i < link.length; i++) {
 			link[i].classList.toggle("active");

@@ -28,16 +28,16 @@ body {
 
 .large-header {
 	width: 100%;
-	background: #333;
+	background: #111;
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
 	z-index: 1;
 }
 
-#large-header {
+/* #large-header {
 	background-image: url("https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg");
-}
+} */
 
 .bg-change {
 	background-image: url(../images/Home-page/Background-image/BGHS0.jpg) !important;
@@ -90,19 +90,20 @@ body {
 } */
 
 .greet {
-	/* background-color: rgba(119, 119, 119, 0.652); */
+	background-color: rgba(119, 119, 119, 0.4);
 	position: absolute;
 	font-size: 50px;
 	text-align: center;
 	left: 44%;
-	bottom: 65%;
+	bottom: 600px;
 	transition: all 0.5s;
 	opacity: 0;
+	padding: 10px 15px;
 }
 
 hr {
 	width: 1000px;
-	bottom: 63%;
+	bottom: 580px;
 	color: whitesmoke;
 	position: absolute;
 	left: 23%;
@@ -111,12 +112,12 @@ hr {
 /*taglines*/
 
 .title-text {
-	/* background-color: rgba(119, 119, 119, 0.652); */
+	background-color: rgba(119, 119, 119, 0.4);
 	position: absolute;
 	font-size: 25px;
 	text-align: center;
 	left: 26%;
-	bottom: 51%;
+	bottom: 480px;
 	transition: all 0.5s;
 	width: 900px;
 	line-height: 1.4;
@@ -282,7 +283,7 @@ hr {
 @keyframes moveIngreet {
 	0% {
 		opacity: 0;
-		transform: translateY(65%);
+		transform: translateY(600px);
 	}
 
 	100% {
@@ -293,7 +294,7 @@ hr {
 @keyframes moveInLine {
 	0% {
 		opacity: 0;
-		transform: translateY(63%);
+		transform: translateY(580px);
 	}
 
 	100% {
@@ -304,7 +305,7 @@ hr {
 @keyframes moveInTitle {
 	0% {
 		opacity: 0;
-		transform: translateY(51%);
+		transform: translateY(480px);
 	}
 
 	100% {
