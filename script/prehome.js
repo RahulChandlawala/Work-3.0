@@ -246,9 +246,17 @@ window.addEventListener("load", function () {
 	}, delay * 2);
 });
 
+/// PRo to trial changes
+
+const version = document.querySelector(".version");
+const data = localStorage.getItem("VERSION");
+
+version.innerHTML = data;
+///// end
+
 // play button logic  start
 
-const backgroundMusic = new Audio("Media/background-music.mp3");
+const backgroundMusic = new Audio("../Media/background-music.mp3");
 
 const play = document.querySelector(".btn-play");
 
@@ -275,7 +283,7 @@ play.addEventListener("click", function () {
 const fullscreen = document.querySelector(".btn-full");
 const elem = document.documentElement;
 
-const music = new Audio("Media/ting.mp3");
+const music = new Audio("../Media/ting.mp3");
 
 fullscreen.addEventListener("click", function () {
 	music.play();
@@ -321,6 +329,13 @@ btnbg.addEventListener("click", function () {
 		btnbg.classList.add("normal");
 		btnbg.classList.remove("animated");
 		canvas.style.opacity = 0;
+		greet.style.animation = "moveIngreet ease-out";
+		line.style.animation = "moveInLine ease-out";
+		title.style.animation = "moveInTitle ease-out";
+		greet.style.visibility = "hidden";
+		line.style.visibility = "hidden";
+		title.style.visibility = "hidden";
+		console.log("heelo");
 	} else {
 		// btnbg.classList.remove("normal");
 		for (let i = 0; i < 5; i++) {
@@ -328,12 +343,22 @@ btnbg.addEventListener("click", function () {
 		}
 		btnbg.classList.add("animated");
 		canvas.style.opacity = 1;
+		greet.style.visibility = "visible";
+		line.style.visibility = "visible";
+		title.style.visibility = "visible";
+		greet.style.animation = "moveIngreet ease-out 1000ms forwards";
+		line.style.animation = "moveInLine ease-out 1000ms forwards";
+		title.style.animation = "moveInTitle ease-out 1000ms forwards";
 	}
 });
 
 /// for animated to normal and normal to animated finsihed
 
 //for the normal bg to have multiple options
+
+const greet = document.querySelector(".greet");
+const line = document.querySelector("hr");
+const title = document.querySelector(".title-text");
 
 const btnNormal = document.querySelector(".btn-bg-normal");
 const count = document.querySelector(".count");

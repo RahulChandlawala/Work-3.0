@@ -9,7 +9,7 @@
 	src: url(../Fonts/TKReg_0.TTF);
 }
 
-/* Start background stysling */
+/* Start background styling */
 html {
 	height: 100%;
 	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -24,6 +24,18 @@ body {
 	max-width: 100%;
 	height: 100vh;
 	/* overflow: hidden; */
+}
+
+.version {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 30px;
+	color: white;
+	width: 70px;
+	background-color: #0f94ed;
+	text-align: center;
+	text-transform: capitalize;
 }
 
 .large-header {
@@ -95,18 +107,19 @@ body {
 	font-size: 50px;
 	text-align: center;
 	left: 44%;
-	bottom: 600px;
+	/* bottom: 600px; */
+	bottom: 60%;
 	transition: all 0.5s;
 	opacity: 0;
 	padding: 10px 15px;
 }
 
 hr {
-	width: 1000px;
-	bottom: 580px;
+	min-width: 1000px;
 	color: whitesmoke;
 	position: absolute;
-	left: 23%;
+	margin-left: 50%;
+	transform: translateX(-50%);
 	opacity: 0;
 }
 /*taglines*/
@@ -117,7 +130,7 @@ hr {
 	font-size: 25px;
 	text-align: center;
 	left: 26%;
-	bottom: 480px;
+	bottom: 48%;
 	transition: all 0.5s;
 	width: 900px;
 	line-height: 1.4;
@@ -283,7 +296,7 @@ hr {
 @keyframes moveIngreet {
 	0% {
 		opacity: 0;
-		transform: translateY(600px);
+		transform: translateY(60%);
 	}
 
 	100% {
@@ -294,18 +307,18 @@ hr {
 @keyframes moveInLine {
 	0% {
 		opacity: 0;
-		transform: translateY(580px);
+		bottom: 38%;
 	}
 
 	100% {
 		opacity: 1;
-		transform: translate(0);
+		bottom: 58%;
 	}
 }
 @keyframes moveInTitle {
 	0% {
 		opacity: 0;
-		transform: translateY(480px);
+		transform: translateY(48%);
 	}
 
 	100% {

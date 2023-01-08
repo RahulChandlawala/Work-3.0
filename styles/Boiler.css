@@ -353,14 +353,14 @@ nav a {
 .snip1189 a {
 	padding: 0.5em 0.8em;
 	margin: 0.2em 0;
-	display: block;
+	display: inline-block;
 	/* color: rgba(255, 255, 255, 0.5); */
 	position: relative;
 	text-decoration: none;
 	font-size: 18px;
 	/* font-weight: 700; */
 }
-.snip1189 a:before,
+/* .snip1189 a:before,
 .snip1189 a:after {
 	height: 14px;
 	width: 14px;
@@ -387,10 +387,10 @@ nav a {
 	transform: translate(-100%, -50%);
 }
 .snip1189 .is-active:hover {
-	/* font-weight: 500; */
+	font-weight: 500;
 	transform: scale(1.2);
-	/* background: #fff; */
-	/* color: #0f94ed; */
+	background: #fff;
+	color: #0f94ed;
 }
 .snip1189 .is-active:hover:before,
 .snip1189 .current .is-active:before,
@@ -399,10 +399,32 @@ nav a {
 	-webkit-transform: translate(0%, 0%);
 	transform: translate(0%, 0%);
 	opacity: 1;
-	/* font-weight: 600; */
+	font-weight: 600;
 	font-size: 25px;
+} */
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color: #fff;
 }
 
+.hover-underline-animation:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
 .is-active {
 	opacity: 1;
 	/* font-weight: 500; */
@@ -463,7 +485,7 @@ nav a {
 	position: absolute;
 	bottom: 5px;
 	width: 256px;
-	right: 60px;
+	right: 80px;
 	/* background-color: red; */
 	height: 40px;
 	display: flex;
@@ -546,6 +568,22 @@ nav a {
 	background-repeat: no-repeat;
 	background-position: center;
 } */
+
+.btn-back {
+	background-image: url("../images/Energy/Symbols/back.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.btn-home {
+	background-image: url("../images/Energy/Symbols/home.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.btn-next {
+	background-image: url("../images/Energy/Symbols/next.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 .footer {
 	height: 50px;
